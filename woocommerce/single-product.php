@@ -323,6 +323,7 @@ global $post;
 
 								<div class="rh_property__sidebar">
 									<?php
+									get_template_part('assets/modern/partials/property/single/auction-history');
                                     if ('agent-in-sidebar' === $theme_property_detail_variation) {
                                         ?>
 										<aside class="rh_sidebar">
