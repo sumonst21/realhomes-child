@@ -13,7 +13,7 @@ $datetimeformat = get_option('date_format').' '.get_option('time_format');
 
 ?>
 
-<h2><?php echo $heading; ?></h2>
+<h3><?php echo $heading; ?></h3>
 
 <?php if(($product->is_closed() === TRUE ) and ($product->is_started() === TRUE )) : ?>
     
