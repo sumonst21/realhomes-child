@@ -8,13 +8,13 @@
 
 global $post;
 
-$property_id                     = get_post_meta( get_the_ID(), 'REAL_HOMES_property_id', true );
+$property_id                     = get_post_meta( get_the_ID(), 'woo_auction_property_id', true );
 $theme_property_detail_variation = get_option( 'theme_property_detail_variation' ); ?>
 
 <div class="rh_property__content">
 
 	<?php
-	$is_auction_property = get_post_meta($post->ID, 'REAL_HOMES_auction_enabled', true);
+	$is_auction_property = get_post_meta($post->ID, 'woo_auction_auction_enabled', true);
 	if ($is_auction_property) { ?>
 	<div class="rh_page__head rh_page__property">
 
@@ -27,7 +27,7 @@ $theme_property_detail_variation = get_option( 'theme_property_detail_variation'
 
 			<?php
 			$address_display  = get_option( 'inspiry_display_property_address', 'true' );
-			$property_address = get_post_meta( get_the_ID(), 'REAL_HOMES_property_address', true );
+			$property_address = get_post_meta( get_the_ID(), 'woo_auction_property_address', true );
 
 			if ( 'true' === $address_display ) {
 				?>
