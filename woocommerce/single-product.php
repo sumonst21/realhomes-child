@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $theme_property_detail_variation = get_option('theme_property_detail_variation');
 
-get_header();
+get_header('shop');
 
 // Page Head.
 $header_variation = get_option('inspiry_property_detail_header_variation');
@@ -329,6 +329,9 @@ global $post;
 										<aside class="rh_sidebar">
 											<?php
 											echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details">';
+											//do_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+											get_template_part('single-product/add-to-cart/auction.php');
+
 											get_template_part('assets/modern/partials/property/single/auction-details');
 											get_template_part('assets/modern/partials/property/single/auction-history');
 											echo '</div></div></div>';
@@ -340,6 +343,7 @@ global $post;
 										<?php
                                     } else {
 										echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details">';
+										 get_template_part('single-product/add-to-cart/auction.php');
 										get_template_part('assets/modern/partials/property/single/auction-details');
 										get_template_part('assets/modern/partials/property/single/auction-history');
 										echo '</div></div></div>';
