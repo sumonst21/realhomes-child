@@ -8,7 +8,7 @@
 
 $inspiry_display_virtual_tour = get_option( 'inspiry_display_virtual_tour' );
 if ( 'true' === $inspiry_display_virtual_tour ) {
-	$rh_360_virtual_tour = get_post_meta( get_the_ID(), 'REAL_HOMES_360_virtual_tour', true );
+	$rh_360_virtual_tour = get_post_meta( get_the_ID(), 'woo_auction_360_virtual_tour', true );
 
 	if ( ! empty( $rh_360_virtual_tour ) ) {
 		?>
