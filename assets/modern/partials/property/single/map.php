@@ -14,9 +14,9 @@ if ( 'true' === $display_google_map || 'true' === $display_social_share ) {
 	?>
 	<div class="rh_property__map_wrap">
 		<?php
-		$property_location = get_post_meta( get_the_ID(), 'REAL_HOMES_property_location', true );
-		$property_address  = get_post_meta( get_the_ID(), 'REAL_HOMES_property_address', true );
-		$property_map      = get_post_meta( get_the_ID(), 'REAL_HOMES_property_map', true );
+		$property_location = get_post_meta( get_the_ID(), 'woo_auction_property_location', true );
+		$property_address  = get_post_meta( get_the_ID(), 'woo_auction_property_address', true );
+		$property_map      = get_post_meta( get_the_ID(), 'woo_auction_property_map', true );
 
 		if ( $property_address && ! empty( $property_location ) && 'true' === $display_google_map && ( 1 != $property_map ) ) {
 			$property_marker = array();
