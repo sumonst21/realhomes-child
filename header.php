@@ -30,6 +30,13 @@
 <script type='text/javascript' src='http://majella.nukasystem.com/wp-content/themes/realhomes/assets/modern/scripts/vendors/markerclusterer.js?ver=2.1.1'></script>
 <script type='text/javascript' src='http://majella.nukasystem.com/wp-content/themes/realhomes/assets/modern/scripts/vendors/oms.min.js?ver=0.3.3'></script>
   <?php endif; ?>
+	<?php
+	if (get_post_type(get_the_ID()) == 'product') { ?>
+<script type='text/javascript' src='//maps.google.com/maps/api/js?key=AIzaSyDGMXPd8R7pQlx8VaA1kGo2fLXI-7QXYsg&#038;language=en_US&#038;ver=3.21'></script>
+<script type='text/javascript' src='http://majella.nukasystem.com/wp-content/themes/realhomes/assets/modern/scripts/vendors/infobox.js?ver=1.1.9'></script>
+<script type='text/javascript' src='http://majella.nukasystem.com/wp-content/themes/realhomes/assets/modern/scripts/vendors/markerclusterer.js?ver=2.1.1'></script>
+<script type='text/javascript' src='http://majella.nukasystem.com/wp-content/themes/realhomes/assets/modern/scripts/vendors/oms.min.js?ver=0.3.3'></script>
+ <?php	}	?>
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
