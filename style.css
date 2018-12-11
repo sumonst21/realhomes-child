@@ -17,37 +17,87 @@ Updated: 2018-12-11 15:13:58
     margin-left: 0;
     padding: 0 2.5rem;
 }
+
 .rh_logo {
     flex: 4 0 10rem;
 }
+
 ul.rh_menu__main li a {
     padding-right: 2.7rem;
     padding-left: 2.7rem;
 }
+
 ul.rh_menu__main {
     padding-left: 5rem;
 }
+
 .rh_menu {
     flex: 3 1 auto;
     -webkit-flex: 3 1 auto;
     -ms-flex: 3 1 auto;
 }
+
 .rh_prop_search {
     max-width: 100%;
 }
+
 .rh_prop_search__form {
     margin-top: 0;
 }
+
 .rh_footer .rh_footer--paddingBottom {
     padding-bottom: 1rem;
 }
+
 .rh_footer .rh_footer__social a {
     margin-left: 0;
 }
+
 .rh_footer .rh_footer__social {
     padding-right: 0;
     text-align: center;
 }
+
 .rh_section__cta {
     z-index: 0;
+}
+
+
+/**/
+
+.widget_auction_property_details .auction-starts {
+    padding: 0 0 1rem 0;
+    border-bottom: 1px dashed rgba(128, 128, 128, .2);
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.widget_auction_property_details .auction-end {
+    padding: 0 0 1rem 0;
+    border-bottom: 1px dashed rgba(128, 128, 128, .2);
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+form.auction_form.cart.rh_widget_form.agent-form.auction-bid-form {
+    text-align: center;
+    padding: 0.5rem 0 1rem 0;
+}
+
+input.input-text.qty.bid.text.left {
+    width: 7em;
+    text-align: center;
+}
+
+.auction-bid-form .quantity .qty {
+    width: auto;
+    text-align: center;
+}
+
+.woocommerce button.button.alt:hover {
+    background-color: #002a57;
+}
+
+.woocommerce button.button.alt {
+    background-color: #084a8e;
 }
