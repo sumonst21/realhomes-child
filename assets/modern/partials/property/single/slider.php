@@ -9,7 +9,7 @@
 global $post;
 
 $size              = 'modern-property-detail-slider';
-$properties_images = rwmb_meta( 'REAL_HOMES_property_images', 'type=plupload_image&size=' . $size, get_the_ID() );
+$properties_images = rwmb_meta( 'woo_auction_property_images', 'type=plupload_image&size=' . $size, get_the_ID() );
 
 if ( ! empty( $properties_images ) && ( 1 < count( $properties_images ) ) ) {
 	?>
