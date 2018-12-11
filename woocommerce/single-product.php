@@ -342,7 +342,7 @@ global $post;
 										<!-- /.rh_sidebar -->
 										<?php
                                     } else {
-										echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details">';
+										echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details ">';
 										 get_template_part('single-product/add-to-cart/auction.php');
 										get_template_part('assets/modern/partials/property/single/auction-details');
 										get_template_part('assets/modern/partials/property/single/auction-history');
