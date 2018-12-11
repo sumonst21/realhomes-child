@@ -328,8 +328,10 @@ global $post;
                                         ?>
 										<aside class="rh_sidebar">
 											<?php
+											echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details">';
 											get_template_part('assets/modern/partials/property/single/auction-details');
 											get_template_part('assets/modern/partials/property/single/auction-history');
+											echo '</div></div></div>';
                                             get_template_part('assets/modern/partials/property/single/agent-for-sidebar');
                                         if (! dynamic_sidebar('property-sidebar')) :
                                             endif; ?>
@@ -337,8 +339,10 @@ global $post;
 										<!-- /.rh_sidebar -->
 										<?php
                                     } else {
+										echo '<div class="rh_prop_card rh_prop_card--block widget_auction_property_details"><div class="rh_prop_card__wrap"><div class="rh_prop_card__details">';
 										get_template_part('assets/modern/partials/property/single/auction-details');
 										get_template_part('assets/modern/partials/property/single/auction-history');
+										echo '</div></div></div>';
                                         get_sidebar('property');
                                     }
                                     ?>
