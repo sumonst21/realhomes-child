@@ -8,7 +8,7 @@
 
 global $post;
 
-$additional_details = get_post_meta( get_the_ID(), 'REAL_HOMES_additional_details', true );
+$additional_details = get_post_meta( get_the_ID(), 'woo_auction_additional_details', true );
 
 if ( ! empty( $additional_details ) ) {
 	$additional_details = array_filter( $additional_details ); // Remove empty values.
@@ -34,11 +34,11 @@ if ( ! empty( $additional_details ) ) {    // Re-check.
 
 } else {
 	// Support for old approach.
-	$detail_titles = get_post_meta( get_the_ID(), 'REAL_HOMES_detail_titles', true );
+	$detail_titles = get_post_meta( get_the_ID(), 'woo_auction_detail_titles', true );
 
 	if ( ! empty( $detail_titles ) ) {
 
-		$detail_values = get_post_meta( get_the_ID(), 'REAL_HOMES_detail_values', true );
+		$detail_values = get_post_meta( get_the_ID(), 'woo_auction_detail_values', true );
 
 		if ( ! empty( $detail_values ) ) {
 
