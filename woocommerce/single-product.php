@@ -323,11 +323,13 @@ global $post;
 
 								<div class="rh_property__sidebar">
 									<?php
-									get_template_part('assets/modern/partials/property/single/auction-history');
+									//get_template_part('assets/modern/partials/property/single/auction-history');
                                     if ('agent-in-sidebar' === $theme_property_detail_variation) {
                                         ?>
 										<aside class="rh_sidebar">
 											<?php
+											get_template_part('assets/modern/partials/property/single/auction-details');
+											get_template_part('assets/modern/partials/property/single/auction-history');
                                             get_template_part('assets/modern/partials/property/single/agent-for-sidebar');
                                         if (! dynamic_sidebar('property-sidebar')) :
                                             endif; ?>
@@ -335,6 +337,8 @@ global $post;
 										<!-- /.rh_sidebar -->
 										<?php
                                     } else {
+										get_template_part('assets/modern/partials/property/single/auction-details');
+										get_template_part('assets/modern/partials/property/single/auction-history');
                                         get_sidebar('property');
                                     }
                                     ?>
