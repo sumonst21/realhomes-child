@@ -8,8 +8,8 @@
 
 $display_video = get_option( 'theme_display_video' );
 if ( 'true' === $display_video ) {
-	$tour_video_url       = get_post_meta( get_the_ID(), 'REAL_HOMES_tour_video_url', true );
-	$tour_video_image_id  = get_post_meta( get_the_ID(), 'REAL_HOMES_tour_video_image', true );
+	$tour_video_url       = get_post_meta( get_the_ID(), 'woo_auction_tour_video_url', true );
+	$tour_video_image_id  = get_post_meta( get_the_ID(), 'woo_auction_tour_video_image', true );
 	$tour_video_image_src = wp_get_attachment_image_src( $tour_video_image_id, 'property-detail-video-image' );
 	$tour_video_image     = $tour_video_image_src[0];
 
