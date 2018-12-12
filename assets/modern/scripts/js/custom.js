@@ -113,15 +113,17 @@
             });
 
             // Flex Slider for Detail Page
-            $('#property-detail-flexslider .flexslider').flexslider({
+            $("#property-detail-flexslider .flexslider").flexslider(
+              {
                 animation: "slide",
                 slideshow: true,
                 directionNav: true,
-                controlNav: false,
-                start: function (slider) {
-                    slider.resize();
+                controlNav: "thumbnails",
+                start: function(slider) {
+                  slider.resize();
                 }
-            });
+              }
+            );
 
             // Flex Slider for Child Properties on property detail page.
             $('#rh_property__child_slider .flexslider').flexslider({
